@@ -3,25 +3,25 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
-        <footer className="footer px-5vw pt-7vw pb-5vw bg-gray-600 text-gray-200">
-            <div className="flex gap-5vw justify-between">
-                <div>
-                    <figure class="flex items-center gap-4">
-                        <img src="/src/assets/logo.png" alt="Logo" className="w-10vw h-10vw"/>
-                        <figcaption className="mt-2vw">Bistro Bliss</figcaption>
+        <footer className="footer pb-10 bg-footer-bg">
+            <div className="flex p-5vw gap-5vw justify-between flex-wrap">
+                <div className="basis-1/4 grow min-w-64">
+                    <figure class="flex items-center gap-4 mb-8">
+                        <img src="/src/assets/footerLogo.png" alt="Logo" />
+                        <figcaption className="mt-2vw font-serif font-semibold italic text-3xl text-white">Bistro Bliss</figcaption>
                     </figure>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil totam placeat optio eligendi, minima et alias commodi nobis nisi. Temporibus?</p>
-                    <ul className="social-media flex gap-4 mt-3vw">
-                        <li><a href="#"><img src="/src/assets/twitter.png" alt="Twitter" className="w-6vw h-6vw"/></a></li>
-                        <li><a href="#"><img src="/src/assets/facebook.png" alt="Facebook" className="w-6vw h-6vw"/></a></li>
-                        <li><a href="#"><img src="/src/assets/instagram.png" alt="Instagram" className="w-6vw h-6vw"/></a></li>
-                        <li><a href="#"><img src="/src/assets/github.png" alt="Github" className="w-6vw h-6vw"/></a></li>
+                    <p className="footer-details">In the new era of technology, we proudly serve great food with modern convenience — in our restaurant or delivered to your door.</p>
+                    <ul className="footer-social flex gap-4 mt-8">
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
                     </ul>
                 </div>
                 
-                <div>
-                    <h3 className="text-white">Pages</h3>
-                    <ul>
+                <div className="basis-1/8 grow min-w-32">
+                    <h3>Pages</h3>
+                    <ul className="footer-link-list">
                         <li>
                             <Link to="/">Home</Link>
                         </li>
@@ -46,9 +46,9 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div>
-                    <h3 className="text-white">Utility Pages</h3>
-                    <ul>
+                <div className="basis-1/8 grow min-w-32">
+                    <h3>Utility Pages</h3>
+                    <ul className="footer-link-list">
                         <li>
                             <Link to="/">Start Here</Link>
                         </li>
@@ -73,13 +73,27 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div>
-                    <h3 className="text-white">Follow us on Instagram</h3>
-                    <div className="grid"></div>
+                <div className="basis-1/4 grow min-w-64">
+                    <h3>Follow us on Instagram</h3>
+                    <div className="grid footer-insta-grid">
+                        <div>
+                            <img src="/src/assets/footer/2afc8d85df65694e80da72b0cf7de51a40b50eda.avif" alt="Instagram 1" className="w-full h-full object-cover"/>
+                        </div>
+                        <div>
+                            <img src="/src/assets/footer/474b1a28c06d46003df0b80dda4474c726928827.avif" alt="Instagram 2" className="w-full h-full object-cover"/>
+                        </div>
+                        <div>
+                            <img src="/src/assets/footer/2f8aae03a37ce4d049abe6d7f425f16004de4208.avif" alt="Instagram 3" className="w-full h-full object-cover"/>
+                        </div>
+                        <div>
+                            <img src="/src/assets/footer/c957e3732cc67a477e4e2d06b4adddd11c436044.avif" alt="Instagram 3" className="w-full h-full object-cover"/>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="footer-container text-center">
-                <p>&copy; 2026 My App. All rights reserved.</p>
+            <hr />
+            <div className="footer-container text-center pt-8">
+                <p>Copyright &copy; 2023 Hashtag Developer. All rights reserved.</p>
             </div>
         </footer>
     );
