@@ -14,5 +14,5 @@
 ### Amlan 
 - Pages Created (Blog, Blog Post, Contact) 
 - Removed Tailwind 
-- Cleaned up my codes
+- Cleaned up my codes 
 - Fixed: Font Bug
