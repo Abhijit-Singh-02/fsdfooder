@@ -8,3 +8,11 @@
 
 ### Amlan 
 - Footer created
+
+# Day 3 
+
+### Amlan 
+- Pages Created (Blog, Blog Post, Contact) 
+- Removed Tailwind 
+- Cleaned up my codes
+- Fixed: Font Bug
