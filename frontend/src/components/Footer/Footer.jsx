@@ -1,26 +1,32 @@
 import { Link } from 'react-router-dom';
+import styles from './Footer.module.css';
+import footerLogo from '../../assets/footerLogo.png';
+import insta1 from '../../assets/footer/2afc8d85df65694e80da72b0cf7de51a40b50eda.avif';
+import insta2 from '../../assets/footer/474b1a28c06d46003df0b80dda4474c726928827.avif';
+import insta3 from '../../assets/footer/2f8aae03a37ce4d049abe6d7f425f16004de4208.avif';
+import insta4 from '../../assets/footer/c957e3732cc67a477e4e2d06b4adddd11c436044.avif';
 
 export default function Footer() {
     return (
         <footer>
-            <div className="footer-flex p-5vw gap-5vw justify-between flex-wrap">
-                <div className="footer-logo-sec">
+            <div className={styles['footer-flex']}>
+                <div className={styles['footer-logo-sec']}>
                     <figure>
-                        <img src="/src/assets/footerLogo.png" alt="Logo" />
+                        <img src={footerLogo} alt="Logo" />
                         <figcaption>Bistro Bliss</figcaption>
                     </figure>
-                    <p className="footer-details">In the new era of technology, we proudly serve great food with modern convenience — in our restaurant or delivered to your door.</p>
-                    <ul className="footer-social">
-                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <p className={styles['footer-details']}>In the new era of technology, we proudly serve great food with modern convenience — in our restaurant or delivered to your door.</p>
+                    <ul className={styles['footer-social']}>
+                        <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i className="fa-brands fa-github"></i></a></li>
                     </ul>
                 </div>
                 
-                <div className="footer-pages">
+                <div className={styles['footer-pages']}>
                     <h3>Pages</h3>
-                    <ul className="footer-link-list">
+                    <ul className={styles['footer-link-list']}>
                         <li>
                             <Link to="/">Home</Link>
                         </li>
@@ -45,9 +51,9 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div className="footer-pages">
+                <div className={styles['footer-pages']}>
                     <h3>Utility Pages</h3>
-                    <ul className="footer-link-list">
+                    <ul className={styles['footer-link-list']}>
                         <li>
                             <Link to="/">Start Here</Link>
                         </li>
@@ -72,26 +78,26 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div className="footer-insta-sec">
+                <div className={styles['footer-insta-sec']}>
                     <h3>Follow us on Instagram</h3>
-                    <div className="footer-insta-grid">
+                    <div className={styles['footer-insta-grid']}>
                         <div>
-                            <img src="/src/assets/footer/2afc8d85df65694e80da72b0cf7de51a40b50eda.avif" alt="Instagram 1" />
+                            <img src={insta1} alt="Instagram 1" />
                         </div>
                         <div>
-                            <img src="/src/assets/footer/474b1a28c06d46003df0b80dda4474c726928827.avif" alt="Instagram 2" />
+                            <img src={insta2} alt="Instagram 2" />
                         </div>
                         <div>
-                            <img src="/src/assets/footer/2f8aae03a37ce4d049abe6d7f425f16004de4208.avif" alt="Instagram 3" />
+                            <img src={insta3} alt="Instagram 3" />
                         </div>
                         <div>
-                            <img src="/src/assets/footer/c957e3732cc67a477e4e2d06b4adddd11c436044.avif" alt="Instagram 4" />
+                            <img src={insta4} alt="Instagram 4" />
                         </div>
                     </div>
                 </div>
             </div>
             <hr />
-            <div className="footer-container text-center pt-8">
+            <div className={styles['footer-container']}>
                 <p>Copyright &copy; 2023 Hashtag Developer. All rights reserved.</p>
             </div>
         </footer>
