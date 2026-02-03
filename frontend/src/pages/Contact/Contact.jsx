@@ -1,5 +1,6 @@
 import styles from './Contact.module.css';
 import BigPageHeader from '../../components/BigPageHeader/BigPageHeader';
+import FullWidthSubmitButton from '../../components/FullWidthSubmitButton/FullWidthSubmitButton';
 
 export default function Contact() {
     const noSubmit = (e) => {
@@ -33,9 +34,7 @@ export default function Contact() {
                             <textarea id="message" name="message" rows="5" placeholder="Write Your Message" minLength={20} required></textarea>
                         </div>
                     </fieldset>
-                    <div className={styles['contact-form-submit']}>
-                        <button type="submit" className={styles['btn-submit']}>Send</button>
-                    </div>
+                    <FullWidthSubmitButton text="Send" />
                 </form>
             </section>
 

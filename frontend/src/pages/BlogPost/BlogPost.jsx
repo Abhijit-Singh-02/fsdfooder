@@ -1,7 +1,7 @@
 import styles from './BlogPost.module.css';
-import BlogPostHeader from '../../components/BlogPostHeader/BlogPostHeader.jsx';
-import BlogRelatedHeader from '../../components/BlogRelatedHeader/BlogRelatedHeader.jsx';
-import BlogGridItem from '../../components/BlogGridItem/BlogGridItem.jsx';
+import BlogPostHeader from '../../components/BlogPostHeader/BlogPostHeader';
+import BlogRelatedHeader from '../../components/BlogRelatedHeader/BlogRelatedHeader';
+import BlogGridItem from '../../components/BlogGridItem/BlogGridItem';
 import img1 from '/src/assets/blog/0384bb001683a1e0ee3f57fde3ea633f0a8db4ff.avif';
 import img2 from '/src/assets/blog/11e20661916d0dbd21a5d340edbcfa2c6a94e42d.avif';
 

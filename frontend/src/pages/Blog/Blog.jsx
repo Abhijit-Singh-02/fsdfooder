@@ -1,7 +1,7 @@
 import styles from './Blog.module.css';
 
-import BigPageHeader from '../../components/BigPageHeader/BigPageHeader.jsx';
-import BlogGridItem from '../../components/BlogGridItem/BlogGridItem.jsx';
+import BigPageHeader from '../../components/BigPageHeader/BigPageHeader';
+import BlogGridItem from '../../components/BlogGridItem/BlogGridItem';
 
 export default function Blog() {
     return (

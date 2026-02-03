@@ -5,8 +5,8 @@
         --color-footer-bg: #474747;
         --color-footer-social: #ad343e;
         --color-body-bg: #f9f9f7;
-        --font-sans: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
-        --font-serif: 'Playfair Display', Georgia, serif;
+        --sans: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+        --serif: 'Playfair Display', Georgia, serif;
     }
 
     * {
@@ -27,9 +27,12 @@
         font-size: 1rem;
         display: flex;
         flex-direction: column;
-        min-height: 100dvh;
         background-color: #f9f9f7;
-        font-family: var(--font-sans);
+        font-family: var(--sans);
+    }
+
+    body, #root {
+        min-height: 100dvh;
     }
 
     main {
@@ -79,7 +82,7 @@
     }
 
     .footer-logo-sec figcaption {
-        font-family: var(--font-serif);
+        font-family: var(--serif);
         font-weight: 600;
         font-size: 1.875rem;
         color: #fff;
