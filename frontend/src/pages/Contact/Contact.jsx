@@ -1,6 +1,7 @@
 import styles from './Contact.module.css';
 import BigPageHeader from '../../components/BigPageHeader/BigPageHeader';
 import FullWidthSubmitButton from '../../components/FullWidthSubmitButton/FullWidthSubmitButton';
+import Footer from '../../components/Footer/Footer';
 
 export default function Contact() {
     const noSubmit = (e) => {
@@ -63,6 +64,7 @@ export default function Contact() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     )
 }

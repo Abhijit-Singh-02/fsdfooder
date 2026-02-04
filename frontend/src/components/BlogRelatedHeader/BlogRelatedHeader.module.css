@@ -5,6 +5,7 @@
     margin-bottom: 2rem;
     text-wrap: balance;
     line-height: 1.25em;
+    width: unset;
 }
 
 .blog-post-related--header {

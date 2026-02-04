@@ -2,6 +2,7 @@ import styles from './Blog.module.css';
 
 import BigPageHeader from '../../components/BigPageHeader/BigPageHeader';
 import BlogGridItem from '../../components/BlogGridItem/BlogGridItem';
+import Footer from '../../components/Footer/Footer';
 
 export default function Blog() {
     return (
@@ -77,6 +78,7 @@ export default function Blog() {
                     y="82%"
                 />
             </section>
+            <Footer />
         </>
     );
 }
