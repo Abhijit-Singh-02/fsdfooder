@@ -38,6 +38,7 @@ import blog2 from "../../assets/fries.png";
 import blog3 from "../../assets/chicken.png";
 import blog4 from "../../assets/cake.png";
 import blog5 from "../../assets/pizza.png";
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
   return (
@@ -207,6 +208,7 @@ const Home = () => {
           />
         </div>
       </section>
+      <Footer />
     </>
   );
 };

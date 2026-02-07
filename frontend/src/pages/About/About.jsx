@@ -15,6 +15,7 @@ import play2 from "../../assets/radio.png";
 import play3 from "../../assets/timer.png";
 
 import hand from "../../assets/hand.png";
+import Footer from '../../components/Footer/Footer';
 
 const About = () => {
   return (
@@ -98,6 +99,7 @@ const About = () => {
           />
         </div>
       </section>
+      <Footer />
     </>
   );
 };
