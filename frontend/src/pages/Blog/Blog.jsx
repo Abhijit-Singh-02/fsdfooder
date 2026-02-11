@@ -20,73 +20,75 @@ import image12 from '../../assets/blog/2adac6ffb4b1eb4e605c59e62e68834ec7c1d135.
 export default function Blog() {
     return (
         <>
-        <ContactNav />
-        <NavBar />
+            <div className={styles.nav}>
+                <ContactNav />
+                <NavBar />
+            </div>
             <BigPageHeader title="Our Blog & Articles" description="We consider all the drivers of change gives you the components you need to change to create a truly happens." />
             <section className={styles['blog-content']}>
                 <BlogGridItem
-                    imagePath= {image1}
+                    imagePath={image1}
                     title="How to prepare a delicious gluten free sushi"
                     y="82%"
                 />
-                
+
                 <BlogGridItem
                     imagePath={image2}
                     title="Exclusive baking lessons from the pastry king"
                     y="82%"
                 />
-                
+
                 <BlogGridItem
                     imagePath={image3}
                     title="How to prepare the perfect fries in an air fryer"
                     y="82%"
                 />
-                
+
                 <BlogGridItem
                     imagePath={image4}
                     title="How to prepare delicious chicken tenders"
                     y="28%"
                 />
-                
+
                 <BlogGridItem
                     imagePath={image5}
                     title="5 great cooking gadgets you can buy to save time"
                 />
-                
+
                 <BlogGridItem
                     imagePath={image6}
                     title="The secret tips & tricks to prepare a perfect burger"
                 />
-                
+
                 <BlogGridItem
                     imagePath={image7}
                     title="7 delicious chessecake recipes you can prepare"
                     y="65%"
                 />
-                
+
                 <BlogGridItem
                     imagePath={image8}
                     title="5 great pizza restaurants you should visit this city"
                     y="65%"
                 />
-                
+
                 <BlogGridItem
                     imagePath={image9}
                     title="5 great cooking gadgets you can buy to save time"
                 />
-                
+
                 <BlogGridItem
                     imagePath={image10}
                     title="How to prepare a delicious gluten free sushi"
                     y="32%"
                 />
-                
+
                 <BlogGridItem
                     imagePath={image11}
                     title="Top 20 simple and quick desserts for kids"
                     y="82%"
                 />
-                
+
                 <BlogGridItem
                     imagePath={image12}
                     title="Top 20 simple and quick desserts for kids"

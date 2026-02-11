@@ -4,6 +4,13 @@
     justify-content: center;
 }
 
+.nav{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
 .contact-form form {
     width: clamp(min(20rem, 100% - 2rem), 100%, 48rem);
     padding: 1.5rem;

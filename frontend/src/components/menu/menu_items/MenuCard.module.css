@@ -1,24 +1,23 @@
 .cont{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 24rem;
-    width: 15.5rem;
+    width: 16.8rem;
     border: 1.5px,solid,#DBDFD0;
     border-radius: 12px;
     font-family: var(--DMSans-font-family);
-    padding-bottom: 1rem;
+    padding-bottom: 1.7rem;
+    margin-bottom: 1rem;
 }
 
 .list{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items:center;
     text-align: center;
-    height: 10rem;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 0.5rem;
     list-style: none;
 }
 

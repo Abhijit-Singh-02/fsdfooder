@@ -20,8 +20,10 @@ import Footer from '../../components/Footer/Footer';
 const About = () => {
   return (
     <>
-       <ContactNav />
+      <div className={styles.nav}>
+        <ContactNav />
         <NavBar />
+      </div>
       <section className={`${styles.sect}`}>
         <HealthyFood image={aboutImg} />
       </section>

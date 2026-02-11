@@ -3,6 +3,14 @@
     margin-bottom: 3rem;
 }
 
+.nav{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
 .blog-post-featured-img div {
     max-width: 48rem;
     margin: 0 auto;

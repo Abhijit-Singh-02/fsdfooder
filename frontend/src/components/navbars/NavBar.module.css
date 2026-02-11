@@ -1,10 +1,10 @@
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: 10vh;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1.4rem;
+    width: 82%;
 }
 
 .logo{
@@ -25,20 +25,22 @@
 }
 
 .logoimg{
-    height: 7vh;
-    width: 5vw
+    height: 56px;
+    width: 56px;
 }
 
 .list{
     display: flex;
-    justify-content: center;
-    list-style:none;
+    justify-content: space-between;
     align-items: center;
-    width: 35%;
+    list-style:none;
+    width: 30%;
     height: 6vh;
+    margin-left: 1rem;
 }
 
 .item{
+    text-align: center;
     padding: 0.3rem 1rem;
 }
 
@@ -51,7 +53,7 @@
 
 .item:hover{
     background-color: #DBDFD0;
-    border-radius: 15px;
+    border-radius: 34px;
 }
 
 .btn{

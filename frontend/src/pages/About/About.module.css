@@ -27,6 +27,14 @@ body {
     font-family: var(--sans);
 }
 
+.nav{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
 .sect {
     padding: 5vw 10vw;
 }

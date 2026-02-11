@@ -11,8 +11,10 @@ import NavBar from '../../components/navbars/NavBar.jsx'
 export default function BlogPost() {
     return (
         <>
-            <ContactNav />
-            <NavBar />
+            <div className={styles.nav}>
+                <ContactNav />
+                <NavBar />
+            </div>
             <BlogPostHeader title="The secret tips & tricks to prepare a perfect burger & pizza for our customers" />
 
             <figure className={styles['blog-post-featured-img']}>

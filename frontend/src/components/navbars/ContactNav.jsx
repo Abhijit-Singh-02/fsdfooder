@@ -8,14 +8,16 @@ import phone from '../../assets/contact_ico/phone.png'
 import mail from '../../assets/contact_ico/mail.png'
 export default function ContactNav() {
   return (
-    <div className={styles.nav}>
-      <ul className={styles.contact}>
+    <div className={styles.main}>
+      <div className={styles.nav}>
+        <ul className={styles.contact}>
         <li className={styles.item}>
-          <img src={phone} alt='phone' className={styles.image}></img> <p>
-            (+91) 9804-789-321</p>
+          <img src={phone} alt='phone' className={styles.phn}></img> 
+          <p>(+91) 9804-789-321</p>
           </li>
         <li className={styles.item}>
-          <img src={mail} alt='mail' className={styles.image}></img><span>abc@gmail.com</span>
+          <img src={mail} alt='mail' className={styles.mail}></img>
+          <p>abc@gmail.com</p>
           </li>
       </ul>
 
@@ -25,6 +27,7 @@ export default function ContactNav() {
         <li className={styles.item}><img src={insta} alt="instagram"/></li>
         <li className={styles.item}><img src={git} alt="github"/></li>
       </ul>
+      </div>
     </div>
   )
 }

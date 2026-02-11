@@ -8,9 +8,11 @@ import Footer from '../components/Footer/Footer.jsx'
 export default function Book() {
   return (
     <div className={styles.main}>
+      <div className={styles.nav}>
         <ContactNav />
         <NavBar />
-        <div className={styles.content}>
+      </div>
+      <div className={styles.content}>
         <div className={styles.book}>
           <div className={styles.head}>
             <Heading heading="Book A Table" details="We consider all the drivers of change gives you the components you need to change to create a truly happens." />
@@ -21,7 +23,7 @@ export default function Book() {
 
       <div className={styles.map}>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

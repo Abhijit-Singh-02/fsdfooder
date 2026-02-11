@@ -13,8 +13,10 @@ export default function Contact() {
 
     return (
         <>
-            <ContactNav />
-            <NavBar />
+            <div className={styles.nav}>
+                <ContactNav />
+                <NavBar />
+            </div>
             <BigPageHeader
                 title="Contact Us"
                 description="We consider all the drivers of change gives you the components you need to change to create a truly happens." />

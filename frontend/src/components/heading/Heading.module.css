@@ -1,16 +1,16 @@
 .hcont{
     display: flex;
     flex-direction: column;
-    width: 44.7vw;
+    width: 41.5rem;
 }
 .hm{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: var(--Playfair-font-family);
 }
 .headingm{
-    font-size: 99px;
+    font-family: var(--Playfair-font-family);
+    font-size: 100px;
     font-weight: 400;
     color: #2C2F24;
 }

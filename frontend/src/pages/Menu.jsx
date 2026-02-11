@@ -11,8 +11,10 @@ import Footer from '../components/Footer/Footer.jsx'
 export default function Menu() {
     return (
         <div className={styles.main}>
-            <ContactNav />
-            <NavBar />
+            <div className={styles.nav}>
+                <ContactNav />
+                <NavBar />
+            </div>
             <div className={styles.content}>
                 <div className={styles.hcon}>
                     <div className={styles.head}>

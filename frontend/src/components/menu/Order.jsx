@@ -20,25 +20,42 @@ export default function Order() {
 
                 <div className={styles.imcont}>
                     <div className={styles.box}>
-                        <img src={uber} alt="uber" className={styles.ims} />
-                        <img src={grub} alt="grub" className={styles.ims} />
-                        <img src={post} alt="post" className={styles.ims} />
+                        <div className={`${styles.imc} ${styles.ubox}`}>
+                            <img src={uber} alt="uber" className={styles.uber} />
+                        </div>
+                        <div className={`${styles.imc} ${styles.ubox}`}>
+                            <img src={grub} alt="grub" className={styles.grub} />
+                        </div>
+                        <div className={`${styles.imc} ${styles.ubox}`}>
+                            <img src={post} alt="post" className={styles.post} />
+                        </div>
                     </div>
 
                     <div className={styles.box2}>
-                        <img src={door} alt="uber" className={styles.ims} />
-                        <img src={food} alt="grub" className={styles.ims} />
-                        <img src={deliver} alt="post" className={styles.ims} />
+                        <div className={`${styles.imc} ${styles.dbox}`}>
+                            <img src={door} alt="uber" className={styles.door} />
+                        </div>
+                        <div className={`${styles.imc} ${styles.dbox}`}>
+                            <img src={food} alt="grub" className={styles.food} />
+                        </div>
+                        <div className={`${styles.imc} ${styles.dbox}`}>
+                            <img src={deliver} alt="post" className={styles.deliver} />
+                        </div>
                     </div>
 
                     <div className={styles.box}>
-                        <img src={insta} alt="uber" className={styles.ims} />
-                        <img src={just} alt="grub" className={styles.ims} />
-                        <img src={didi} alt="post" className={styles.ims} />
+                        <div className={`${styles.imc} ${styles.ibox}`}>
+                             <img src={insta} alt="uber" className={styles.insta} />
+                        </div>
+                        <div className={`${styles.imc} ${styles.ibox}`}>
+                            <img src={just} alt="grub" className={styles.just} />
+                        </div>
+                        <div className={`${styles.imc} ${styles.ibox}`}>
+                            <img src={didi} alt="post" className={styles.didi} />
+                        </div>    
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

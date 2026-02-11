@@ -1,19 +1,15 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useState} from 'react'
 import styles from "./MenuBar.module.css"
 
-export default function MenuBar({handler=()=>{}}) {
-  const all= useRef(null)
-   useEffect(() => {
-      all.current.click();
-    }, []);
-
+export default function MenuBar() {
+  const [activeButton, setActiveButton] = useState(0);
   return (
      <ul className={styles.list}>
-      <button className={`${styles.btn}`} autoFocus onClick={handler} ref={all}>{"All"}</button>
-      <button className={`${styles.btn}`} onClick={handler}>{"Breakfast"}</button>
-      <button className={`${styles.btn}`} onClick={handler}>{"Main Dishes"}</button>
-      <button className={`${styles.btn}`} onClick={handler}>{"Drinks"}</button>
-      <button className={`${styles.btn}`} onClick={handler}>{"Desserts"}</button>
+      <button className={activeButton===0?`${styles.act}`:`${styles.btn}`} onClick={()=>setActiveButton(0)}>All</button>
+      <button className={activeButton===1?`${styles.act}`:`${styles.btn}`} onClick={()=>setActiveButton(1)}>Breakfast</button>
+      <button className={activeButton===2?`${styles.act}`:`${styles.btn}`} onClick={()=>setActiveButton(2)}>Main Dishes</button>
+      <button className={activeButton===3?`${styles.act}`:`${styles.btn}`} onClick={()=>setActiveButton(3)}>Drinks</button>
+      <button className={activeButton===4?`${styles.act}`:`${styles.btn}`} onClick={()=>setActiveButton(4)}>Desserts</button>
     </ul> 
   )
 }
